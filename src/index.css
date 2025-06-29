@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global style for Japanese look */
+body {
+  @apply font-sans;
+  font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', sans-serif;
+  background: linear-gradient(145deg, #fceef5, #e0dffb, #d9f5f0);
+  background-size: 400% 400%;
+  animation: bgWave 15s ease infinite;
+}
+
+/* Sakura-style animated background wave */
+@keyframes bgWave {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Spinner loader */
+.spinner {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: conic-gradient(#0000 10%, #cc3363);
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 9px), #000 0);
+  animation: spinner-zp9dbg 1s infinite linear;
+}
+
+@keyframes spinner-zp9dbg {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+/* Floating Sakura Petals */
+.petal {
+  position: fixed;
+  top: -50px;
+  width: 16px;
+  height: 16px;
+  background: radial-gradient(circle, #f8b3c6 0%, #fff0f5 100%);
+  border-radius: 50%;
+  animation: sakuraFall linear infinite;
+  z-index: 1;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+@keyframes sakuraFall {
+  0% {
+    transform: translateY(-10%) rotate(0deg);
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+  }
+}
+
+/* Card enhancement */
+.card {
+  @apply bg-white rounded-xl border border-pink-200 shadow-xl hover:shadow-2xl transition-transform duration-300 transform hover:scale-105;
+}
+
+/* Button enhancement */
+.btn-japan {
+  @apply text-lg px-3 py-1 rounded-md font-semibold border-2 transition-all duration-300;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: transparent;
+  color: #1f2937;
+}
+.btn-japan:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-color: #dc2626;
+}
+.btn-selected {
+  @apply border-white bg-opacity-60 text-red-600 font-bold;
+}
