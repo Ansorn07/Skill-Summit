@@ -9,12 +9,14 @@ const Filter = (props) => {
     setCategory(title);
   }
 
+ 
+
   return (
     <div className="w-11/12 flex flex-wrap max-w-max space-x-4 mx-auto gap-y-4 py-4 justify-center">
       {props.filterData.map((data) => {
         return (
           <button
-            className={`text-lg px-2 py-1 rounded-md font-medium text-white bg-black border-2 hover:bg-opacity-50 transition-all duration-200
+            className={`text-lg px-2 py-1 rounded-md font-medium text-white bg-black border-2 hover:bg-opacity-50 transition-all duration-200   shadow-xl rounded-xl overflow-hidden m-4 w-33 transform hover:scale-105 transition-transform duration-300 hover:shadow-2xl  border-pink-200
               ${
                 category === data.title
                   ? "bg-opacity-60 border-white"

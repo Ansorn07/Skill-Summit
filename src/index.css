@@ -82,3 +82,10 @@ body {
 .btn-selected {
   @apply border-white bg-opacity-60 text-red-600 font-bold;
 }
+.text-outline-black {
+  text-shadow:
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+}
