@@ -1,20 +1,13 @@
-# 📚 SkillSummit – Japan Edition 
+# 📚 SkillSummit – Japan Edition
 
-A modern, beautifully designed React + Tailwind web application that displays top online courses with a calming Japanese aesthetic. Supports real-time filtering, dynamic UI, and smooth animations.
+**SkillSummit – Japan Edition** is a sleek and modern web application built with React and TailwindCSS. It showcases top online courses through a minimalist, Japanese-inspired interface. The application supports dynamic filtering, responsive design, and smooth animations for an engaging user experience.
 
-🌸 Features
+## Features
 
-
-Japanese-inspired user interface design
-
-Developed using React and TailwindCSS
-
-Custom animated spinner for loading state
-
-Category-based filtering functionality
-
-Interactive course cards with wishlist capability
-
-Smooth transitions and hover animations for better UX
-
-Fully responsive layout compatible with all devices
+* Elegant Japanese-themed user interface
+* Developed using React and TailwindCSS for optimal performance and design consistency
+* Custom animated loader for improved visual feedback during data fetch
+* Real-time category-based course filtering
+* Interactive course cards with wishlist functionality
+* Smooth UI transitions and responsive hover effects
+* Fully responsive design, optimized for all screen sizes and devices
